@@ -42,6 +42,8 @@ class Value:
         return self * (other**-1)
     def __rmul__(self,other):
         return self*other
+    def __radd__(self,other):
+        return self+other
 
     def exp(self):
         x=self.data
